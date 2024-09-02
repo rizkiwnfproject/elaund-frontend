@@ -1,23 +1,22 @@
 import React from 'react';
 import Button from './Button';
 import { Link } from 'react-scroll';
+import Logo from './Logo';
 
 const Navbar = () => {
     return (
         <nav className="bg-white">
             <div className="container mx-auto px-4 flex justify-between items-center py-4">
                 {/* Logo */}
-                <div className="text-2xl font-bold text-blue-600">
-                    ELAUND
-                </div>
+                <Logo className='w-36'/>
 
                 {/* Links To Another Page*/}
                 <div className="hidden md:flex space-x-8">
                     <Link to="homepage" smooth={true} duration={500} className='text-gray-700 hover:text-blue-600 cursor-pointer'>
-                        Homepage
+                        Home
                     </Link>
                     <Link to="mainfeature" smooth={true} duration={500} className='text-gray-700 hover:text-blue-600 cursor-pointer'>
-                        Main Feature
+                        Feature
                     </Link>
                     <Link to="benefit" smooth={true} duration={500} className='text-gray-700 hover:text-blue-600 cursor-pointer'>
                         Benefit
@@ -31,7 +30,7 @@ const Navbar = () => {
                 </div>
                 {/* Login Button */}
                 <div>
-                    <Button className="bg-blue-600 px-6 py-3 text-white rounded-3xl">
+                    <Button className="bg-primary px-6 py-3 text-white rounded-3xl font-bold">
                         Login
                     </Button>
                 </div>

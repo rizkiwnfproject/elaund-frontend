@@ -2,16 +2,21 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Section from '../components/Section';
 import Home from './section/Home';
+import Feature from './section/Feature';
 
 const Homepage = () => {
   return (
     <div>
       {/* Navbar */}
       <Navbar />
-      <main className="container mx-auto px-4 py-8 my-12">
-        <Section id="homepage">
+      <main className=" py-8">
+        <Section id="home" className='container mx-auto mt-16 mb-44 sm:mt-2 lg:mt-16 h-full'>
           <Home />
         </Section>
+        <Section id="feature">
+          <Feature />
+        </Section>
+        
       </main>
     </div>
   );
