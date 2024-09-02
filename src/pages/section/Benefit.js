@@ -1,20 +1,48 @@
 import React from 'react';
-import myImage from '../../assets/images/home.png';
+import myImage from '../../assets/images/benefit.png';
+import listImage from '../../assets/images/listIcon.png';
 
-const Home = () => {
+const Benefit = () => {
+    const benefits = [
+        {
+            text: "Rebahan dengan nyaman dan cucian aman bersama kami",
+        },
+        {
+            text: "Pakaian hilang? ELaund garansi ganti baru cuy",
+        },
+        {
+            text: "24/7 Customer Service untuk kamu yang jomblo dan lagi gabut",
+        },
+        {
+            text: "Ga pake lama, sat-set seperti ninja.",
+        },
+
+    ];
+
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-9'>
-            <img src={myImage} alt="Laundry" className='w-full rounded-3xl' />
-            <div className='flex flex-col gap-6'>
-                <div className='home-title text-3xl font-bold text-primary'>
-                    Laundry Done Right, At Your Doorstep
-                </div>
-                <p>
-                    ELaund adalah aplikasi layanan laundry modern yang menawarkan kemudahan dan kepraktisan bagi kamu yang super sibuk dan sok produktif walaupun hobi hanya rebahan aja. Dengan fitur antar-jemput, ELaund memastikan pakaian kamu bersih tanpa harus meninggalkan rumah. Solusi ideal untuk gaya hidup yang santuy dan sat-set. Menjadi solusi laundry terbaik yang menggabungkan kenyamanan, kecepatan, dan kualitas layanan untuk memenuhi kebutuhan kamu yang ingin jadi wibu. Tingkatkan produktivitas dan serahkan urusan rumah pada kami, "Because Your Time is Too Valuable just for Laundry".</p>
+        <div className='flex flex-col md:flex-row items-center justify-between'>
+            {/* Bagian gambar di sebelah kiri */}
+            <div className='flex flex-col gap-4 w-full md:w-6/12'>
+                <img src={myImage} alt="benefit" className='w-full rounded-3xl' />
             </div>
 
+            {/* Bagian teks di sebelah kanan */}
+            <div className='flex flex-col gap-4 w-full md:w-6/12'>
+                <div className='text-primary font-bold text-xl md:text-2xl lg:text-3xl mb-4'>
+                    Mahasiswa dan pekerja kantoran yang sibuk merapat nih!
+                </div>
+                {benefits.map((benefit, index) => (
+                    <div key={index} className='flex flex-row gap-3 items-center'>
+                        <img src={listImage} alt="List Icon" className='w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16' />
+                        <span className='text-lg md:text-xl lg:text-2xl'>
+                            {benefit.text}
+                        </span>
+                    </div>
+                ))}
+            </div>
         </div>
     );
+
 };
 
-export default Home;
+export default Benefit;

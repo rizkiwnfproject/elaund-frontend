@@ -1,8 +1,8 @@
 import React from 'react';
 
-const FeatureField = ({ children, className, titleText, fieldText, textName }) => {
+const FeatureField = ({ children, className }) => {
   return (
-    <div className={`flex flex-col gap-2 ${textName}`}>
+    <div className={`flex flex-col gap-2 ${className}`}>
       {children}
     </div>
   );
