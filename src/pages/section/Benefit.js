@@ -1,24 +1,9 @@
 import React from 'react';
 import myImage from '../../assets/images/benefit.png';
 import listImage from '../../assets/images/listIcon.png';
+import { benefits } from '../../constans/constans';
 
 const Benefit = () => {
-    const benefits = [
-        {
-            text: "Rebahan dengan nyaman dan cucian aman bersama kami",
-        },
-        {
-            text: "Pakaian hilang? ELaund garansi ganti baru cuy",
-        },
-        {
-            text: "24/7 Customer Service untuk kamu yang jomblo dan lagi gabut",
-        },
-        {
-            text: "Ga pake lama, sat-set seperti ninja.",
-        },
-
-    ];
-
     return (
         <div className='flex flex-col md:flex-row items-center justify-between'>
             {/* Bagian gambar di sebelah kiri */}

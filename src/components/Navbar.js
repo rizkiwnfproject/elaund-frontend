@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from './Button';
 import { Link } from 'react-scroll';
 import Logo from './Logo';
 
