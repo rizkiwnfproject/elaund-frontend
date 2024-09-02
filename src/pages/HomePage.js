@@ -10,13 +10,13 @@ const Homepage = () => {
       {/* Navbar */}
       <Navbar />
       <main className=" py-8">
-        <Section id="home" className='container mx-auto mt-16 mb-44 sm:mt-2 lg:mt-16 h-full'>
+        <Section id="home" className='container px-7 md:px-0 mx-auto mt-2 md:mt-16 mb-44 h-full'>
           <Home />
         </Section>
         <Section id="feature">
           <Feature />
         </Section>
-        
+
       </main>
     </div>
   );

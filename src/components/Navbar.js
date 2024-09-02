@@ -29,11 +29,11 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/* Login Button */}
-                <div>
+                {/* <div>
                     <Button className="bg-primary px-6 py-3 text-white rounded-3xl font-bold">
                         Login
                     </Button>
-                </div>
+                </div> */}
             </div>
         </nav>
     );
