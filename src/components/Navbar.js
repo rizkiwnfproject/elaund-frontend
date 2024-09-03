@@ -97,6 +97,8 @@ const Navbar = () => {
                     ))}
                 </div>
             </div>
+            {/* Overlay Background */}
+            <div className={`fixed top-0 left-0 w-full h-full bg-gray-500 opacity-70 z-40 ${isOpen ? 'block' : 'hidden'}`}></div>
         </nav>
     );
 };
