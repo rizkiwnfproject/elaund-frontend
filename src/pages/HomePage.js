@@ -12,16 +12,16 @@ const Homepage = () => {
       {/* Navbar */}
       <Navbar />
       <main className="">
-        <Section id="home" className='container px-7 md:px-0 mx-auto mt-2 md:mt-16 mb-44 h-full'>
+        <Section id="homepage" className='container px-7 md:px-0 mx-auto mt-28 md:mt-44 mb-9 md:mb-32 min-h-auto md:min-h-full'>
           <Home />
         </Section>
-        <Section id="feature" className='mb-24 sm:mb-44 h-full'>
+        <Section id="main_feature" className='mb-24 sm:mb-32 min-h-fit'>
           <Feature />
         </Section>
-        <Section id="benefit" className='container px-7 md:px-0 mx-auto mb-12 sm:mb-44 h-full'>
+        <Section id="benefit" className='container px-7 md:px-0 mx-auto mb-12 sm:mb-44 min-h-fit'>
           <Benefit />
         </Section>
-        <Section id="footer" className='px-7md:px-0 h-full bg-soft-blue rounded-t-3xl w-full'>
+        <Section id="contact" className='px-7md:px-0 min-h-fit bg-soft-blue rounded-t-3xl w-full'>
           <Footer />
         </Section>
 

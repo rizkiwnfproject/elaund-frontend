@@ -1,6 +1,28 @@
 import myImage from '../assets/images/home_laundry.jpg';
 import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
+export const navbar_company =[
+    {
+        section : 'homepage',
+        name: 'Home',
+    },
+    {
+        section : 'main_feature',
+        name: 'Feature',
+    },
+    {
+        section : 'benefit',
+        name: 'Benefit',
+    },
+    {
+        section : 'testimonials',
+        name: 'Testimoni',
+    },
+    {
+        section : 'contact',
+        name: 'Contact',
+    },
+];
 
 export const benefits = [
     { text: "Rebahan dengan nyaman dan cucian aman bersama kami" },
