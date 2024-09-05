@@ -5,6 +5,7 @@ import Home from './section/Home';
 import Feature from './section/Feature';
 import Benefit from './section/Benefit';
 import Footer from './section/Footer';
+import Testimonials from './section/Testimonials';
 
 const Homepage = () => {
   return (
@@ -12,16 +13,19 @@ const Homepage = () => {
       {/* Navbar */}
       <Navbar />
       <main className="">
-        <Section id="homepage" className='container px-7 md:px-0 mx-auto mt-28 md:mt-44 mb-9 md:mb-32 min-h-auto md:min-h-full'>
+        <Section id="homepage" className='container px-7 md:px-0 mx-auto pt-28 md:pt-44 mb-9 md:mb-48 '>
           <Home />
         </Section>
-        <Section id="main_feature" className='mb-24 sm:mb-32 min-h-fit'>
+        <Section id="main_feature" className='py-5 min-h-screen'>
           <Feature />
         </Section>
-        <Section id="benefit" className='container px-7 md:px-0 mx-auto mb-12 sm:mb-44 min-h-fit'>
+        <Section id="benefit" className='container px-7 md:px-0 mx-auto min-h-screen'>
           <Benefit />
         </Section>
-        <Section id="contact" className='px-7md:px-0 min-h-fit bg-soft-blue rounded-t-3xl w-full'>
+        <Section id="testimonials" className='min-h-fit '>
+          <Testimonials />
+        </Section>
+        <Section id="contact" className='px-7 md:px-0 min-h-fit bg-soft-blue rounded-t-3xl w-full'>
           <Footer />
         </Section>
 

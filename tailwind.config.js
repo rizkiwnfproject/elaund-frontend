@@ -16,6 +16,7 @@ module.exports = {
         'primary' : '#163FAA',
         'soft-blue' : '#E5F1FF',
         'light-blue': '#93BEFF',
+        'base': '#404040',
       }, 
       borderRadius: {
         '4xl': '2rem',

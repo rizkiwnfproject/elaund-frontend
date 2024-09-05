@@ -1,6 +1,12 @@
-import myImage from '../assets/images/home_laundry.jpg';
+import myImage1 from '../assets/images/feature-1.png';
+import myImage2 from '../assets/images/feature-2.png';
+import myImage3 from '../assets/images/feature-3.png';
+import myImage4 from '../assets/images/testimoni-1.png';
+import myImage5 from '../assets/images/testimoni-2.png';
+import myImage6 from '../assets/images/testimoni-3.png';
 import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
+// Navbar
 export const navbar_company =[
     {
         section : 'homepage',
@@ -24,6 +30,7 @@ export const navbar_company =[
     },
 ];
 
+// benefit
 export const benefits = [
     { text: "Rebahan dengan nyaman dan cucian aman bersama kami" },
     { text: "Pakaian hilang? ELaund garansi ganti baru cuy" },
@@ -31,11 +38,12 @@ export const benefits = [
     { text: "Ga pake lama, sat-set seperti ninja" },
 ];
 
+// features
 export const features = [
     {
         title: "Put & Take",
         description: "Lagi males dan pingin rebahan? Tapi cucian menggunung di rumah. Haishh, kamu hanya perlu letakkan cucian di rumah dan cukup klik sekali untuk menikmati layanan antar-jemput ELaund.",
-        img: myImage,
+        img: myImage1,
         alignment: "text-left",
         order: "order-first",
         listClass: "rounded-l-10xl md:rounded-l-full ml-6 md:ml-32 items-start md:items-center",
@@ -43,7 +51,7 @@ export const features = [
     {
         title: "Easy Pay",
         description: "Bayar pakai tunai? Transfer? QRIS? Atau bayar nanti aja? Ya bisa semua, Lah. ELaund meyediakan berbagai metode pembayaran yang sangat lengkap.",
-        img: myImage,
+        img: myImage3,
         alignment: "text-right",
         order: "order-last",
         listClass: "rounded-r-10xl md:rounded-r-full mr-6 md:mr-32 items-end md:items-center",
@@ -51,13 +59,51 @@ export const features = [
     {
         title: "Track Your Order",
         description: "Kamu ga perlu kawatir baju ilang, karena transparasi ELaund hanya setipis tisu dengan adanya fitur Tracking Order. Jadi cucianmu aman bersama kami, dan tentunya bersih dan wangi.",
-        img: myImage,
+        img: myImage2,
         alignment: "text-left",
         order: "order-first",
         listClass: "rounded-l-10xl md:rounded-l-full ml-6 md:ml-32 items-start md:items-center",
     }
 ];
 
+// testimoni
+export const list_testimoni = [
+    {
+        image : myImage4,
+        title : 'Elaund mantap',
+        describe : 'Elaund bener2 ngebantu baik mahasiswa maupun dosen seperti saya',
+        ranking : 5,
+        name : 'Davis',
+        position : 'Dosen'
+    }, 
+    {
+        image : myImage5,
+        title : 'ngebantu banget elaund',
+        describe : 'Elaund oke banget. buat mahasiswa-mahasiswa, terutama yang sering sibuk himpunan, bisa banget laundry disini',
+        ranking : 5,
+        name : 'Hend',
+        position : 'Mahasiswa'
+    }, 
+    {
+        image : myImage6,
+        title : 'Elaund mantap',
+        describe : 'Elaund bener2 ngebantu baik mahasiswa maupun dosen seperti saya',
+        ranking : 5,
+        name : 'Davis',
+        position : 'Dosen'
+    }, 
+    {
+        image : myImage4,
+        title : 'Ayok pesen di Elaund',
+        describe : 'Baru kali ini nemu aplikasi yang mantap banget buat ngebantu orang kantoran sibuk kayak aku',
+        ranking : 3,
+        name : 'Rana',
+        position : 'Pegawai'
+    }, 
+]
+
+
+// footer
 export const footer_first_col = [
     {
         name: "Career",

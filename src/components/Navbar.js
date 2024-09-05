@@ -54,7 +54,7 @@ const Navbar = () => {
                             duration={500}
                             offset={-100}
                             className="relative group text-gray-700 hover:text-primary cursor-pointer"
-                            activeClass="text-primary"
+                            activeClass="text-primary" activeStyle='text-primary'
                         >
                             {link.name}
                             <span className="block h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left mt-2"></span>
