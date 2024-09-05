@@ -31,24 +31,29 @@ const Testimonials = () => {
                 }}
                 breakpoints={{
                     640: {
-                        slidesPerView: 2,
+                        slidesPerView: 1,
                         spaceBetween: 5,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 1,
                         spaceBetween: 5,
                     },
                     1024: {
+                        slidesPerView: 2,
+                        spaceBetween: 5,
+                    },
+                    1280: {
                         slidesPerView: 3,
                         spaceBetween: 5,
                     },
+
                 }}
                 modules={[Navigation]}
                 className="mySwiper h-96 w-11/12">
                 {list_testimoni.map((list, index) => (
                     <SwiperSlide className='pt-3'>
                         <div class="bg-white drop-shadow-lg rounded-3xl flex flex-row items-center mt-2 mx-2 p-8 h-80 overflow-hidden">
-                            <img class="w-5/12 rounded-xl" src={list.image} alt="Sunset in the mountains" />
+                            <img class="max-w-44 rounded-xl" src={list.image} alt="Sunset in the mountains" />
                             <div className='px-6 py-4'>
                                 <div class="pb-3">
                                     <div class="font-bold text-xl mb-4">{list.title}</div>
