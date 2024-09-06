@@ -9,7 +9,7 @@ import Testimonials from './section/Testimonials';
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='overflow-x-hidden '>
       {/* Navbar */}
       <Navbar />
       <main className="">
@@ -25,7 +25,7 @@ const Homepage = () => {
         <Section id="testimonials" className='min-h-screen'>
           <Testimonials />
         </Section>
-        <Section id="contact" className='px-7 md:px-0  bg-soft-blue rounded-t-3xl w-full mt-[-8rem] sm:mt-0'>
+        <Section id="contact" className='md:px-0  bg-soft-blue rounded-t-3xl w-full mt-[-8rem] sm:mt-0'>
           <Footer />
         </Section>
 

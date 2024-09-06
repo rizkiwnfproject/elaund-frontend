@@ -86,7 +86,7 @@ const Navbar = () => {
                             to={link.section}
                             smooth={true}
                             duration={500}
-                            offset={-120}
+                            offset={-95}
                             onClick={toggleMenu}
                             className="relative group text-gray-700 hover:text-primary cursor-pointer"
                             activeClass="text-primary font-bold"

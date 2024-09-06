@@ -11,11 +11,11 @@ import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 export const navbar_company =[
     {
         section : 'homepage',
-        name: 'Home',
+        name: 'Beranda',
     },
     {
         section : 'main_feature',
-        name: 'Feature',
+        name: 'Fitur Utama',
     },
     {
         section : 'benefit',
@@ -27,7 +27,7 @@ export const navbar_company =[
     },
     {
         section : 'contact',
-        name: 'Contact',
+        name: 'Kontak',
     },
 ];
 
@@ -105,20 +105,6 @@ export const list_testimoni = [
 
 
 // footer
-export const footer_first_col = [
-    {
-        name: "Career",
-        link: "",
-    },
-    {
-        name: "Contact",
-        link: "",
-    },
-    {
-        name: "Privacy",
-        link: "",
-    },
-];
 export const footer_first_sec_col = [
     {
         name: "Facebook",
@@ -139,11 +125,11 @@ export const footer_first_sec_col = [
 
 export const footer_second_col = [
     {
-        name: "Home",
+        name: "Beranda",
         link: "",
     },
     {
-        name: "Feature",
+        name: "Fitur Utama",
         link: "",
     },
     {
@@ -151,11 +137,11 @@ export const footer_second_col = [
         link: "",
     },
     {
-        name: "Testimonials",
+        name: "Testimoni",
         link: "",
     },
     {
-        name: "Contact",
+        name: "Kontak",
         link: "",
     },
 ];
@@ -163,14 +149,17 @@ export const footer_second_col = [
 export const footer_third_col = [
     {
         name: "description",
-        field: "Institut Teknologi Sepuluh Nopember, Jl. Raya ITS, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur 60111"
+        field: "Institut Teknologi Sepuluh Nopember, Jl. Raya ITS, Keputih, Kec. Sukolilo, Surabaya, Jawa Timur 60111",
+        color: "",
     },
     {
         name: "Email",
-        field: "elaund.comp@gmail.com"
+        field: "elaund.comp@gmail.com",
+        color: "",
     },
     {
         name: "Contact",
-        field: "(0343) 675 456"
+        field: "(0343) 675 456",
+        color: "text-[#163FAA]",    
     },
 ];

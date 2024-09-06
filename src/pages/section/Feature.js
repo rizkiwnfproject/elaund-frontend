@@ -26,7 +26,7 @@ const Feature = () => {
     return (
         <div ref={ref} className='flex flex-col gap-6'>
             <div className='feature-title text-3xl font-bold text-primary text-center'>
-                Main Feature
+                Fitur Utama
             </div>
             {features.map((feature, index) => (
                 <motion.div

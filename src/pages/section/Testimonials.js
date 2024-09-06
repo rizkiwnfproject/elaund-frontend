@@ -58,7 +58,7 @@ const Testimonials = () => {
                             <img className="h-36 w-20 sm:h-56 sm:w-36 object-cover rounded-2xl" src={list.image} alt="Testimoni" />
                             <div className='flex flex-col justify-between gap-2 lg:gap-4'>
                                 <div className="flex flex-col gap-4 lg:gap-6">
-                                    <div className="font-bold text-sm sm:text-xl capitalize">{list.title}</div>
+                                    <div className="font-semibold text-sm sm:text-xl capitalize">{list.title}</div>
                                     <p className="text-xs sm:text-sm">
                                         {list.describe}
                                     </p>
@@ -69,7 +69,7 @@ const Testimonials = () => {
                                     </div>
                                 </div>
                                 <div className='flex flex-col gap-1 lg:gap-2'>
-                                    <div className="font-bold ">{list.name}</div>
+                                    <div className="font-semibold ">{list.name}</div>
                                     <p className="">
                                         {list.position}
                                     </p>
@@ -78,10 +78,10 @@ const Testimonials = () => {
                         </div>
                     </SwiperSlide>
                 ))}
-                <div class="button-prev absolute bottom-10 left-[30%] xs:left-[37%] sm:left-[41%] md:left-[43%] lg:left-[45%] xl:left-[46%]">
+                <div class="button-prev absolute bottom-10 left-[30%] xs:left-[37%] sm:left-[41%] md:left-[43%] lg:left-[44%] xl:left-[45%]">
                     <div class="swiper-button-prev bg-primary text-white w-16 flex flex-row justify-center"></div>
                 </div>
-                <div class="button-next absolute bottom-10 right-[30%] xs:right-[37%] sm:right-[41%] md:right-[43%] lg:right-[45%]  xl:right-[46%]">
+                <div class="button-next absolute bottom-10 right-[30%] xs:right-[37%] sm:right-[41%] md:right-[43%] lg:right-[44%]  xl:right-[45%]">
                     <div class="swiper-button-next bg-primary text-white w-16 flex flex-row justify-center"></div>
                 </div>
             </Swiper>
