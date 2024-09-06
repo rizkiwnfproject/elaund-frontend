@@ -5,6 +5,8 @@ module.exports = {
   ],
   theme: {
     screens: {
+      'xxs': '384px', 
+      'xs': '500px', 
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -24,6 +26,15 @@ module.exports = {
         '6xl': '3rem',
         '10xl': '7rem',
       }
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '5rem',
+        '2xl': '6rem',
+      },
     },
   },
   plugins: [],

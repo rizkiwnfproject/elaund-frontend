@@ -4,6 +4,7 @@ import myImage3 from '../assets/images/feature-3.png';
 import myImage4 from '../assets/images/testimoni-1.png';
 import myImage5 from '../assets/images/testimoni-2.png';
 import myImage6 from '../assets/images/testimoni-3.png';
+import myImage7 from '../assets/images/testimoni-4.png';
 import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 // Navbar
@@ -89,11 +90,11 @@ export const list_testimoni = [
         title : 'Elaund mantap',
         describe : 'Elaund bener2 ngebantu baik mahasiswa maupun dosen seperti saya',
         ranking : 5,
-        name : 'Davis',
-        position : 'Dosen'
+        name : 'Rana',
+        position : 'Pegawai'
     }, 
     {
-        image : myImage4,
+        image : myImage7,
         title : 'Ayok pesen di Elaund',
         describe : 'Baru kali ini nemu aplikasi yang mantap banget buat ngebantu orang kantoran sibuk kayak aku',
         ranking : 3,

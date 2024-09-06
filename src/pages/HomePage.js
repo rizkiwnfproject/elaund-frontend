@@ -22,10 +22,10 @@ const Homepage = () => {
         <Section id="benefit" className='container px-7 md:px-0 mx-auto min-h-screen'>
           <Benefit />
         </Section>
-        <Section id="testimonials" className='min-h-fit '>
+        <Section id="testimonials" className='min-h-screen'>
           <Testimonials />
         </Section>
-        <Section id="contact" className='px-7 md:px-0 min-h-fit bg-soft-blue rounded-t-3xl w-full'>
+        <Section id="contact" className='px-7 md:px-0  bg-soft-blue rounded-t-3xl w-full mt-[-8rem] sm:mt-0'>
           <Footer />
         </Section>
 

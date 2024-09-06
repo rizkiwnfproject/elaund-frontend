@@ -1,0 +1,108 @@
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+    position: absolute;
+    /* Posisikan di bawah carousel */
+
+    background-color: #1E3A8A;
+    /* Sesuaikan dengan warna tombol yang Anda inginkan */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Bayangan */
+    bottom: 10px;
+}
+
+.mySwiper .swiper-button-prev {
+    left: 45%;
+}
+
+.mySwiper .swiper-button-next {
+    right: 45%;
+}
+
+.mySwiper .swiper-button-prev::after,
+.mySwiper .swiper-button-next::after {
+    font-size: 20px;
+}
+
+/* @media only screen and (max-width: 1280px) {
+    .mySwiper .swiper-button-prev {
+        left:  44%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 44%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .mySwiper .swiper-button-prev {
+        left: 43%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 43%;
+    }
+}
+@media only screen and (max-width: 865px) {
+    .mySwiper .swiper-button-prev {
+        left: 41%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 41%;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .mySwiper .swiper-button-prev {
+        left: 39%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 39%;
+    }
+}
+@media only screen and (max-width: 510px) {
+
+    .mySwiper .swiper-button-prev {
+        left: 35%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 35%;
+    }
+}
+@media only screen and (max-width: 384px) {
+    .mySwiper .swiper-button-prev {
+        left: 32%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 32%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .mySwiper .swiper-button-prev {
+        left: 28%;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 28%;
+    }
+} */
+
+
+/*
+.mySwiper .swiper-slide {
+    transition: all 0.3s ease; 
+}
+
+.mySwiper .swiper-slide-active {
+    background-color: #F0F8FF; 
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+}
+ */
