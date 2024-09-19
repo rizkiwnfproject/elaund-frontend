@@ -3,10 +3,13 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { navbar_company } from '../constans/constans';
 import Logo from './Logo';
+import Button from './Button';
+import { useNavigate } from 'react-router-dom'; // Tambahkan ini
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+    const navigate = useNavigate(); // Tambahkan ini
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -36,6 +39,10 @@ const Navbar = () => {
         };
     }, [isOpen]);
 
+    const goToLogin = () => {
+        navigate('/login'); // Navigasi ke halaman login
+    };
+
     return (
         <nav className={`bg-white fixed top-0 w-full z-50 transition-shadow duration-300 ease-in-out ${isSticky ? 'shadow-sm' : ''}`}>
             <div className="container mx-auto px-4 flex justify-between items-center py-4">
@@ -45,7 +52,7 @@ const Navbar = () => {
                 </a>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden lg:flex space-x-8 items-center">
                     {navbar_company.map(link => (
                         <Link
                             key={link.name}
@@ -61,9 +68,12 @@ const Navbar = () => {
                         </Link>
                     ))}
                 </div>
+                <Button onClick={goToLogin} className="hidden lg:block bg-primary text-white py-2 px-4 rounded-3xl font-medium ">
+                    Masuk
+                </Button>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden">
+                <div className="lg:hidden">
                     <button onClick={toggleMenu} className="text-primary focus:outline-none">
                         {isOpen ? '' : (
                             <span>&#9776;</span> // Menu Icon
@@ -79,22 +89,27 @@ const Navbar = () => {
                         <span>&#x2715;</span> // Close Icon
                     ) : ''}
                 </button>
-                <div className="flex flex-col space-y-8 mt-20 px-6">
-                    {navbar_company.map(link => (
-                        <Link
-                            key={link.name}
-                            to={link.section}
-                            smooth={true}
-                            duration={500}
-                            offset={-95}
-                            onClick={toggleMenu}
-                            className="relative group text-gray-700 hover:text-primary cursor-pointer"
-                            activeClass="text-primary font-bold"
-                        >
-                            {link.name}
-                            <span className="block h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                        </Link>
-                    ))}
+                <div className='mt-20 px-6 flex flex-col justify-between h-[33rem]'>
+                    <div className="flex flex-col space-y-3 ">
+                        {navbar_company.map(link => (
+                            <Link
+                                key={link.name}
+                                to={link.section}
+                                smooth={true}
+                                duration={500}
+                                offset={-95}
+                                onClick={toggleMenu}
+                                className="relative group text-gray-700 hover:text-primary cursor-pointer text-center"
+                                activeClass="text-primary font-bold"
+                            >
+                                {link.name}
+                                <span className="block h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
+                            </Link>
+                        ))}
+                    </div>
+                    <Button onClick={goToLogin} className="block lg:hidden bg-primary text-white py-2 px-4 rounded-3xl font-medium ">
+                        Masuk
+                    </Button>
                 </div>
             </div>
             {/* Overlay Background */}

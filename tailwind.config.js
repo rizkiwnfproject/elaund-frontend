@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xxs': '384px', 
-      'xs': '500px', 
+      'xxs': '384px',
+      'xs': '500px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -14,17 +14,20 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
-      colors:{
-        'primary' : '#163FAA',
-        'soft-blue' : '#E5F1FF',
+      colors: {
+        'primary': '#163FAA',
+        'soft-blue': '#E5F1FF',
         'light-blue': '#93BEFF',
         'base': '#404040',
-      }, 
+      },
       borderRadius: {
         '4xl': '2rem',
         '5xl': '2.5rem',
         '6xl': '3rem',
         '10xl': '7rem',
+      },
+      backgroundImage: {
+        'login-pattern': "url('/src/assets/images/login.png')",
       }
     },
     container: {
@@ -36,6 +39,7 @@ module.exports = {
         '2xl': '6rem',
       },
     },
+
   },
   plugins: [],
 }
