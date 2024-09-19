@@ -13,7 +13,7 @@ const Homepage = () => {
       {/* Navbar */}
       <Navbar />
       <main className="">
-        <Section id="homepage" className='container px-7 md:px-0 mx-auto pt-28 md:pt-44 mb-9 md:mb-48 '>
+        <Section id="homepage" className='container px-7 md:px-0 mx-auto pt-28 md:pt-44 pb-9 md:pb-44 '>
           <Home />
         </Section>
         <Section id="main_feature" className='py-5 min-h-screen'>
@@ -22,10 +22,10 @@ const Homepage = () => {
         <Section id="benefit" className='container px-7 md:px-0 mx-auto min-h-screen'>
           <Benefit />
         </Section>
-        <Section id="testimonials" className='min-h-screen'>
+        <Section id="testimonials" className=''>
           <Testimonials />
         </Section>
-        <Section id="contact" className='md:px-0  bg-soft-blue rounded-t-3xl w-full mt-[-8rem] sm:mt-0'>
+        <Section id="contact" className='md:px-0 w-full pt-64'>
           <Footer />
         </Section>
 

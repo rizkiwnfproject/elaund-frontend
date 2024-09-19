@@ -4,12 +4,12 @@ import { Link } from 'react-scroll';
 import { navbar_company } from '../constans/constans';
 import Logo from './Logo';
 import Button from './Button';
-import { useNavigate } from 'react-router-dom'; // Tambahkan ini
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
-    const navigate = useNavigate(); // Tambahkan ini
+    const navigate = useNavigate();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -25,7 +25,7 @@ const Navbar = () => {
 
     const handleResize = () => {
         if (window.innerWidth >= 768 && isOpen) {
-            setIsOpen(false); // Close mobile menu if in desktop mode
+            setIsOpen(false);
         }
     };
 
@@ -40,7 +40,7 @@ const Navbar = () => {
     }, [isOpen]);
 
     const goToLogin = () => {
-        navigate('/login'); // Navigasi ke halaman login
+        navigate('/login');
     };
 
     return (
@@ -60,8 +60,10 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             offset={-100}
+                            spy={true}
                             className="relative group text-gray-700 hover:text-primary cursor-pointer"
-                            activeClass="text-primary" activeStyle='text-primary'
+                            activeClass="text-primary font-medium"
+                            activeStyle={{ color: 'primary', fontWeight: '600' }}
                         >
                             {link.name}
                             <span className="block h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left mt-2"></span>
@@ -99,8 +101,10 @@ const Navbar = () => {
                                 duration={500}
                                 offset={-95}
                                 onClick={toggleMenu}
+                                spy={true}
                                 className="relative group text-gray-700 hover:text-primary cursor-pointer text-center"
-                                activeClass="text-primary font-bold"
+                                activeClass="text-primary font-medium"
+                                activeStyle={{ color: 'primary', fontWeight: '600' }}
                             >
                                 {link.name}
                                 <span className="block h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
